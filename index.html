@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Felipe Cezar Paz</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         body, html {
             margin: 0;
@@ -12,26 +12,7 @@
             height: 100%;
             overflow: hidden;
             cursor: pointer; /* Change cursor to pointer */
-        }
-        .video-background {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            z-index: -1;
-        }
-        .video-background video {
-            min-width: 100%;
-            min-height: 100%;
-            width: auto;
-            height: auto;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            object-fit: cover;
+            background-color: black; /* Set background color to black */
         }
         .social-icons {
             position: absolute;
@@ -49,28 +30,13 @@
         }
     </style>
 </head>
-<body onclick="toggleVideo()">
-
-    <div class="video-background">
-        <video id="backgroundVideo" autoplay muted loop>
-            <source src="Wiz Khalifa - Real Rich feat. Gucci Mane [Official Music Video] [9nV9GNjXFDo].webm" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
+<body>
 
     <div class="social-icons">
         <a href="https://x.com/felipeczpaz" target="_blank"><i class="fab fa-x-twitter"></i></a>
         <a href="https://instagram.com/felipeczpaz" target="_blank"><i class="fab fa-instagram"></i></a>
         <a href="https://linkedin.com/in/felipeczpaz" target="_blank"><i class="fab fa-linkedin"></i></a>
     </div>
-
-    <script>
-        const video = document.getElementById('backgroundVideo');
-
-        function toggleVideo() {
-            if (video.paused) video.play();
-        }
-    </script>
 
 </body>
 </html>
